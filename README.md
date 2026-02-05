@@ -1,1 +1,1 @@
-# ML - MINI Project by EDA_MINI_1TEAM
+# Machine Learning MINI Project by ML_MINI_1TEAM
