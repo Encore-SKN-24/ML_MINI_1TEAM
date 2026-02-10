@@ -61,7 +61,7 @@
 ## 3. 모델링 및 성능 평가
 - **사용한 모델**: XGBoost
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/user-attachments/assets/beee3c97-fa17-4593-bffc-dad1c045ad1a" alt="auc-roc와 혼동행렬" width="600">
   <p><i>auc-roc와 혼동행렬</i></p>
 </div>
@@ -69,7 +69,7 @@
 - **성능 향상을 위한 노력**: 
 
 smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision이 낮게 나왔음
-<div align="center">
+<div align="left">
   <img src="https://github.com/user-attachments/assets/fcf20cc6-a62b-4794-b0ec-820573ccff57" width="600">
 </div>
 
