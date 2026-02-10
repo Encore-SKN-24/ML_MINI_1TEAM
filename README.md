@@ -59,8 +59,28 @@
 [인구밀도(인구주택총조사기준) - 시도] https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Fconn_path%3DMT_ZTITLE%26list_id%3DA1_13%26obj_var_id%3D%26seqNo%3D%26tblId%3DDT_1B08024%26vw_cd%3DMT_ZTITLE%26itm_id%3D%26language%3Dkor%26lang_mode%3Dko%26orgId%3D101%26
 
 ## 3. 모델링 및 성능 평가
-- **사용한 모델**: Decision Tree, Logistic Regression, XGBoost 등
-- **성능 향상을 위한 노력**: (하이퍼파라미터 튜닝, 특성 공학 등)
+- **사용한 모델**: XGBoost
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/beee3c97-fa17-4593-bffc-dad1c045ad1a" alt="auc-roc와 혼동행렬" width="600">
+  <p><i>auc-roc와 혼동행렬</i></p>
+</div>
+
+- **성능 향상을 위한 노력**: 
+
+smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision이 낮게 나왔음
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fcf20cc6-a62b-4794-b0ec-820573ccff57" width="600">
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
+</div>
+
+이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
+
+
+
 - **최종 모델 및 성능 결과**: (정확도, F1-score 등)
 
 ## 4. 실제 예측 결과 및 기대 효과
