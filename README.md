@@ -98,7 +98,7 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
   </thead>
   <tbody>
     <tr>
-      <td>XGboost</td>
+      <td>XGboost(smote)</td>
       <td>0.81/0.81</td>
       <td>0.81</td>
       <td>0.81</td>
@@ -107,7 +107,7 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
       <td>0.90</td>
     </tr>
     <tr>
-      <td>XGboost1</td>
+      <td>XGboost(scale_pos_weigh)</td>
       <td>0.96/0.91</td>
       <td>0.91</td>
       <td>0.65</td>
