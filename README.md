@@ -460,14 +460,19 @@ ROC Curve 분석 결과, **Random Forest(AUC = 0.91)**가 Decision Tree보다 �
 - **(3) 사용한 모델: XGBoost**
 
 <div align="left">
-  <img src="https://github.com/user-attachments/assets/beee3c97-fa17-4593-bffc-dad1c045ad1a" alt="auc-roc와 혼동행렬" width="600">
-  <p><i>auc-roc와 혼동행렬</i></p>
+  <img src="https://github.com/user-attachments/assets/d2d78eb1-1929-4914-86b3-a8f2cae54881" alt="auc-roc와 혼동행렬" width="600">
+  <p><i>auc-roc 곡선</i></p>
+</div>
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/1e122378-2e9c-4186-859e-1ed9abbe4705" alt="auc-roc와 혼동행렬" width="600">
+  <p><i>혼동행렬</i></p>
 </div>
 
 - **성능 향상을 위한 노력**: 
 
 smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision이 낮게 나왔음
-<div align="center">
+<div align="left">
   <img src="https://github.com/user-attachments/assets/fcf20cc6-a62b-4794-b0ec-820573ccff57" width="600">
 </div>
 
@@ -481,6 +486,9 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
   <img src="https://github.com/user-attachments/assets/e0366e0f-4229-44b1-8e7a-e2aa06fb9dea" width="600">
 </div>
 
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/fa7aa882-c974-4148-8e47-9307bf11cd20" width="600">
+</div>
 
 ---
 
