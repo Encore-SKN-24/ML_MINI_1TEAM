@@ -17,9 +17,25 @@
 - **예측 결과**: (최종 선택 모델의 예측 결과 요약)
 - **기대 효과**: (머신러닝 도입에 따른 기회비용 절감 및 기대 효과)
 
+<img width="705" height="553" alt="gb_roc" src="https://github.com/user-attachments/assets/0b495d3b-caf3-45f4-ae82-658aa3140046" />
+  
+<img width="784" height="584" alt="gb_ftimportance" src="https://github.com/user-attachments/assets/6e919e0c-06e4-46f4-ac75-ffcad7c6f02b" />
+
+
+
 ---
 ### 📂 폴더 구조 안내
 - **data/**: 데이터셋 파일 (raw, processed)
 - **notebooks/**: EDA 및 실험용 주피터 노트북
 - **src/**: 실제 실행용 파이썬 코드
 - **models/**: 학습된 모델 저장 (.pkl, .h5 등)
+
+
+
+## eda 부분 재훈님 그래프 다음에 와야 해요!!
+![산불 상관관계 히트맵](https://github.com/user-attachments/assets/8653d96c-532a-49f1-93e3-1e12b59efb41)
+
+- 산불발생은 실효습도와 약한 음의 상관관계를 가짐
+- 밭_비율과는 약한 양의 상관관계를 가짐
+- 평균기온, 일강수량, 풍속 등과는 거의 상관관계가 없음
+
