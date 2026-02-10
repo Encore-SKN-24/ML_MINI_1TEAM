@@ -47,7 +47,9 @@
 * **기상 데이터:** 기상청 공공데이터포털
 * **산불 원인 통계 및 분석 논리:** 국립산림과학원(NIFoS), *2025년 산불 제대로 알기*
 * **지리 데이터:** 통계청 시도별 행정구역 및 지목별 면적 통계
-- 출처 : 
+- 출처 :
+
+
 [전국(도별) 논밭별 경지면적] https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Fconn_path%3DI3%26tblId%3DDT_1EB001%26orgId%3D101%26
 
 
