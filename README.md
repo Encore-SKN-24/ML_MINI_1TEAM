@@ -26,7 +26,7 @@
 
 #### 🤖 Machine Learning
 <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"> <img src="https://img.shields.io/badge/XGBoost-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/LightGBM-green?style=for-the-badge"> 
-> **Models Used:** Random Forest, Gradient Boosting, Decision Tree, XGBoost, LightGBM
+> **Models Used:** Decision Tree, Random Forest, Gradient Boosting, XGBoost, LightGBM
 
 #### 📊 Visualization
 <img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"> <img src="https://img.shields.io/badge/Seaborn-blue?style=for-the-badge">
@@ -248,7 +248,7 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 
 > **분석 요약:** 위 원인 분석 중 '기타'로 분류된 항목들을 세분화하여 분한 그래프. 이를 통해 쓰레기 소각, 건축물 화재 전이 등 모델이 학습해야 할 미세한 위험 요인들을 파악하고 데이터 라벨링의 정확도를 개선하였음.
 
-### 6.1.4. 📈 산불 발생 원인 통계 (Reference)
+### 6.1.4. 산불 발생 원인 통계 (Reference)
 
 국립산림과학원 자료에 따르면 전체 산불의 절반 이상이 실화·소각 등 인적 요인으로 발생하며, 본 모델은 이러한 인적 요인을 정량화하여 예측에 반영하고 데이터 정합성을 확인하였음.
 
@@ -263,6 +263,19 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 | `발생원인_구분/세부원인/기타` | 산불 발생 사유 (실화, 소각 등) | 원인 분석용 |
 | `피해면적_합계` | 산불로 인한 총 소실 면적 | - |
 
+### 6.1.5. 변수 간 상관관계 분석 (Correlation Analysis)
+
+산불 발생 여부와 주요 기상 및 지표 데이터 간의 상관성 분석 및 변수의 유효성 검증.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8653d96c-532a-49f1-93e3-1e12b59efb41" width="80%">
+</p>
+
+* **실효습도**: 산불 발생과 음의 상관관계를 가짐 -> 실효습도가 낮을수록(나무나 풀이 바짝 마를수록) 산불은 더 자주 발생
+* **인적 요인(밭 비율)**: 약한 양의 상관관계를 보여, 농지 소각 행위가 실제 산불의 주요 원인=사람이 있는 곳에 불이 난다라는 통계를 입증함.
+* **평균기온, 강수량, 풍속과는 낮은 상관관계**:실효습도 같은 복합 변수가 더 유의미함을 확인하였음.
+
+  
 ---
 
 ## 6.2. 날씨 데이터 (Weather Data)
@@ -300,41 +313,18 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 ---------------------
 
 # 7. 📊 **모델링 및 성능 평가 (Modeling & Evaluation)**
-<작성예시>
-- **사용한 모델**: LightGBM, XGBoost, Decision Tree & Random Forest 등
-- **성능 향상을 위한 노력**: 하이퍼파라미터 튜닝 등
-- **최종 모델 및 성능 결과**: (정확도, F1-score 등)
----
-- **사용한 모델**:LightGBM
-- **성능 향상을 위한 노력**: (optuna 활용 최적의 하이퍼파라미터 활용)
-<img width="726" height="425" alt="1  lightGBM 하이퍼파라미터" src="https://github.com/user-attachments/assets/57d3c10a-1f44-4179-82d1-90ed6d306d89" /><br/>
+
+| 순서 | Model | Description | Optimization |
+| :---: | :--- | :--- | :--- |
+| 01 | **Decision Tree** | 직관적인 규칙 기반 분석을 통해 산불 발생의 초기 주요 변수 파악 | Max Depth 제한으로 과적합 방지 |
+| 02 | **Random Forest** | 여러 개의 결정 트리를 결합하여 모델의 안정성과 정확도(91%) 향상 | Bagging 기법 적용 |
+| 03 | **Gradient Boosting** | 오차를 순차적으로 보정하여 AUC 0.88의 높은 판별력 확보 | Optuna 최적화 |
+| 04 | **XGBoost** | 대규모 데이터 처리에 최적화된 성능과 정밀한 하이퍼파라미터 튜닝 | Scale_pos_weight로 불균형 해소 |
+| 05 | **LightGBM** | 학습 속도가 빠르며 리소스 효율성이 높은 최신 부스팅 모델 활용 | Optuna 자동 튜닝 |
 
 ---
 
-
-- **사용한 모델**:XGBoost
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/beee3c97-fa17-4593-bffc-dad1c045ad1a" alt="auc-roc와 혼동행렬" width="600">
-  <p><i>auc-roc와 혼동행렬</i></p>
-</div>
-
-- **성능 향상을 위한 노력**: 
-
-smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision이 낮게 나왔음
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/fcf20cc6-a62b-4794-b0ec-820573ccff57" width="600">
-</div>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
-</div>
-
-이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
-
----
-
-- **사용한 모델**: Decision Tree & Random Forest 비교 분석
+- **(1) 사용한 모델: Decision Tree & Random Forest**
 
 #### [하이퍼 파라미터 튜닝 결과]
 
@@ -387,11 +377,11 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
   <tr>
     <td style="width: 50%; text-align: center; vertical-align: top;">
       <img src="https://github.com/user-attachments/assets/1ba44a0e-692a-46ce-9dc7-1ec4032ca0dc" style="width: 100%;">
-      <p><b>모델 결과 시각화 1</b></p>
+      <p><b></b></p>
     </td>
     <td style="width: 50%; text-align: center; vertical-align: top;">
       <img src="https://github.com/user-attachments/assets/c57fd532-b6e5-44f0-9a42-f3190163244f" style="width: 100%;">
-      <p><b>모델 결과 시각화 2</b></p>
+      <p><b></b></p>
     </td>
   </tr>
 </table>
@@ -407,16 +397,80 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
   <tr>
     <td style="width: 50%; text-align: center; vertical-align: top;">
       <img src="https://github.com/user-attachments/assets/152f8a5c-b129-48d1-92d2-a69c8b938df4" style="width: 100%;">
-      <p><b>모델 결과 시각화 3</b></p>
+      <p><b></b></p>
     </td>
     <td style="width: 50%; text-align: center; vertical-align: top;">
       <img src="https://github.com/user-attachments/assets/a0d74db7-737a-4ae8-b9a0-458bda583034" style="width: 100%;">
-      <p><b>모델 결과 시각화 4</b></p>
+      <p><b></b></p>
     </td>
   </tr>
 </table>
 
 ROC Curve 분석 결과, **Random Forest(AUC = 0.91)**가 Decision Tree보다 높은 수치를 기록하며 전반적인 예측 판별력이 우수함을 입증함. 두 모델 모두 좌상단으로 치우친 **이상적인 곡선 형태**를 보여 유효성을 확보하였으나, **Random Forest가 AUC에서 0.02 가량 앞서며** 미세한 성능 우위를 점했음.
+
+
+---
+
+- **(2) 사용한 모델: Gradient Boosting (앙상블)**
+  
+- **성능향상을 위한 노력**:
+  - Hyperparameter Tuning - Optuna 라이브러리 활용하여 최적의 하이퍼파라미터 조합을 탐색.
+  - 학습률(learning_rate), 트리의 개수(n_estimators), 트리의 깊이(max_depth)등을 세밀하게 조정하여 과적합을 방지하고 일반화 성능을 높임
+- **성능결과 및 해석**:
+  - ROC Curve: AUC 수치가 0.88로 측정됨. 이는 모델이 산불 발생 여부(Class 0, 1)를 매우 높은 확률로 정확하게 판별하고 있음을 의미.
+
+  - Feature Importance: 모델이 예측 시 가장 중요하게 참고한 변수는 **'실효습도'**와 **'평균 상대습도'**였음. 이는 산불 예측에 있어 대기의 건조 상태가 결정적인 역할을 한다는 데이터적 근거가 됨. (대기 건조도의 누적치가 산불 위험을 결정짓는 중요한 물리적 요인임을 입증)
+    
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td colspan="2" style="text-align: center; vertical-align: top;">
+      <img src="https://github.com/user-attachments/assets/35231abd-31c1-4755-a780-99cda409cbcc" width="80%">
+      <p><b>Gradient Boosting 하이퍼파라미터 튜닝 과정 (Optuna)</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; text-align: center; vertical-align: top;">
+      <img src="https://github.com/user-attachments/assets/0b495d3b-caf3-45f4-ae82-658aa3140046" style="width: 100%;">
+      <p><b>ROC Curve (AUC = 0.88)</b></p>
+    </td>
+    <td style="width: 50%; text-align: center; vertical-align: top;">
+      <img src="https://github.com/user-attachments/assets/6e919e0c-06e4-46f4-ac75-ffcad7c6f02b" style="width: 100%;">
+      <p><b>Feature Importance</b></p>
+    </td>
+  </tr>
+</table>
+
+
+---
+
+- **(3) 사용한 모델: XGBoost**
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/beee3c97-fa17-4593-bffc-dad1c045ad1a" alt="auc-roc와 혼동행렬" width="600">
+  <p><i>auc-roc와 혼동행렬</i></p>
+</div>
+
+- **성능 향상을 위한 노력**: 
+
+smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision이 낮게 나왔음
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fcf20cc6-a62b-4794-b0ec-820573ccff57" width="600">
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
+</div>
+
+이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
+
+---
+
+- **(4) 사용한 모델: LightGBM**
+- **성능 향상을 위한 노력**: optuna 활용 최적의 하이퍼파라미터 활용
+<img width="726" height="425" alt="1  lightGBM 하이퍼파라미터" src="https://github.com/user-attachments/assets/57d3c10a-1f44-4179-82d1-90ed6d306d89" /><br/>
+
+---
+
 
 # 7-1. 실제 예측 결과 및 기대 효과
 - **예측 결과**:(최종 선택 모델의 예측 결과 요약)<br/><br/>
