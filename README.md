@@ -17,8 +17,7 @@
 - **예측 결과**: (최종 선택 모델의 예측 결과 요약)
 - **기대 효과**: (머신러닝 도입에 따른 기회비용 절감 및 기대 효과)
 
-<img width="716" height="292" alt="image" src="https://github.com/user-attachments/assets/23d0161f-8975-4015-adc4-a725a6a761f7" />
-
+<img width="731" height="333" alt="image" src="https://github.com/user-attachments/assets/35231abd-31c1-4755-a780-99cda409cbcc" />
 
 <img width="705" height="553" alt="gb_roc" src="https://github.com/user-attachments/assets/0b495d3b-caf3-45f4-ae82-658aa3140046" />
   
