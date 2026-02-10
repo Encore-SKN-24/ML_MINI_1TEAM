@@ -49,7 +49,11 @@
 * **지리 데이터:** 통계청 시도별 행정구역 및 지목별 면적 통계
 - 출처 : 
 [전국(도별) 논밭별 경지면적] https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Fconn_path%3DI3%26tblId%3DDT_1EB001%26orgId%3D101%26
+
+
 [산림면적] https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Fconn_path%3DI2%26tblId%3DDT_11001N_2013_A022%26orgId%3D110%26
+
+
 [인구밀도(인구주택총조사기준) - 시도] https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Fconn_path%3DMT_ZTITLE%26list_id%3DA1_13%26obj_var_id%3D%26seqNo%3D%26tblId%3DDT_1B08024%26vw_cd%3DMT_ZTITLE%26itm_id%3D%26language%3Dkor%26lang_mode%3Dko%26orgId%3D101%26
 
 ## 3. 모델링 및 성능 평가
