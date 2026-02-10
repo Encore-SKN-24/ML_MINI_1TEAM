@@ -75,7 +75,7 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
 
 이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
 </div>
 
