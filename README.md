@@ -73,15 +73,51 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
   <img src="https://github.com/user-attachments/assets/fcf20cc6-a62b-4794-b0ec-820573ccff57" width="600">
 </div>
 
+이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
 </div>
 
-이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
 
 
 
-- **최종 모델 및 성능 결과**: (정확도, F1-score 등)
+
+- **최종 모델 및 성능 결과**:
+- <table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>모델</th>
+      <th>train/test 점수</th>
+      <th>정확도(Accuracy)</th>
+      <th>재현율(Recall)</th>
+      <th>정밀도(Precision)</th>
+      <th>f1 score</th>
+      <th>ROC-AUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XGboost</td>
+      <td>0.81/0.81</td>
+      <td>0.81</td>
+      <td>0.81</td>
+      <td>0.28</td>
+      <td>0.42</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>XGboost1</td>
+      <td>0.96/0.91</td>
+      <td>0.91</td>
+      <td>0.65</td>
+      <td>0.47</td>
+      <td>0.54</td>
+      <td>0.90</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## 4. 실제 예측 결과 및 기대 효과
 - **예측 결과**: (최종 선택 모델의 예측 결과 요약)
