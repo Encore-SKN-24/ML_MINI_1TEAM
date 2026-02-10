@@ -459,7 +459,7 @@ ROC Curve 분석 결과, **Random Forest(AUC = 0.91)**가 Decision Tree보다 �
 
 - **(3) 사용한 모델: XGBoost**
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/user-attachments/assets/beee3c97-fa17-4593-bffc-dad1c045ad1a" alt="auc-roc와 혼동행렬" width="600">
   <p><i>auc-roc와 혼동행렬</i></p>
 </div>
@@ -471,11 +471,16 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
   <img src="https://github.com/user-attachments/assets/fcf20cc6-a62b-4794-b0ec-820573ccff57" width="600">
 </div>
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
 </div>
 
 이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/e0366e0f-4229-44b1-8e7a-e2aa06fb9dea" width="600">
+</div>
+
 
 ---
 
