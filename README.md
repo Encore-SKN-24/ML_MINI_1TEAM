@@ -16,11 +16,15 @@
 - **최종 모델 및 성능 결과**: (정확도, F1-score 등)
 ## 4. 실제 예측 결과 및 기대 효과
 - **예측 결과**: (최종 선택 모델의 예측 결과 요약)
+
+
 **애들이 작성한 표 추가 및 해석**
-  **ROC Curve**
+
+애들 이미지도 추가해주세요
+  **Model 별 ROC Curve**
   <img width="699" height="551" alt="2  lightXGB_ROC_curve" src="https://github.com/user-attachments/assets/f5da1754-31cf-434a-abf0-b1e738107358" />
 
-  **Feature importance** 
+  **Model 별 Feature importance** 
 <img width="791" height="544" alt="3  Feature Importances (LightGBM)" src="https://github.com/user-attachments/assets/3d6db174-5d8a-46a3-b08e-3905ab9af392" />
 
 - **기대 효과**: (머신러닝 도입에 따른 기회비용 절감 및 기대 효과)
