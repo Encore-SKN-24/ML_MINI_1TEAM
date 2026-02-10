@@ -8,7 +8,7 @@
  
 ### **팀원 소개**
  
-| <img width="140" height="140" src="./assets/EDA_Profile_Jaehoon.png"/> | <img width="140" height="140" src="./assets/EDA_Profile_unoo.png"/> | <img width="140" height="140" src="./assets/EDA_Profile_ara.png"/> | <img width="140" height="140" src="./assets/EDA_Profile_Lin.png"/> | <img width="140" height="140" src="./assets/EDA_Profile_Su.png"/> |
+| <img src="https://github.com/user-attachments/assets/192cc577-c7ac-49a9-9855-2230cd1cc55c" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/3cb641b2-cfc5-4c3a-a10a-e0222ef9c673" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a60d634f-6fba-4cfb-b74e-b56d6be3f358" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a32be587-2de6-4884-8f66-0a4b303dfe53" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a367b378-429e-4117-85fa-bd968867ee28" width="150" height="150"> |
 |:---:|:---:|:---:|:---:|:---:|
 | **고아라** | **정재훈** | **김은우** | **나혜린** | **박수영** |
 |  [![github - Akoh-0909](https://img.shields.io/badge/Akoh--0909-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Akoh-0909) | [![github - JeaHoon-J](https://img.shields.io/badge/JeaHoon--J-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JeaHoon-J) | [![github - whitehole17](https://img.shields.io/badge/whitehole17-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/whitehole17) | [![github - ](https://img.shields.io/badge/nngpfls-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nngpfls) | [![github - suyoung6279](https://img.shields.io/badge/suyoung6279-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/suyoung6279) |
@@ -24,23 +24,38 @@
 ### **주제 선정 배경**: 
 이전 EDA과정에서 다루었던 기상데이터를 보다 실질적인 사회적 이슈에 연결해보고자 하였으며, 단순한 상관분석을 넘어, 머신러닝을 활용하여 실제 현장에서 활용 가능한 예측 모델로 확장해 보는 것을 목표로 하였음. 
 
-- **기후위기대응**: 기후 변화로 인해 구조적 위험이 된 대형 산불에 대해 데이터 기반의 예방 및 경보 체계 필요성 증대
+- **산불 위기대응**: 대형 산불에 대한 원인 데이터 기반의 예방 및 경보 체계 필요성 증대
 
 - **실용적 가치**: 산불 발생 가능성을 사전에 예측하여 행정 현장의 자원 배분 및 의사 결정을 지원하고 피해를 최소화
- 
+
+### 🔗 News Sources
   
 ---
 
 ## 2. 데이터셋 개요 및 전처리
 - **데이터셋 정보**: 산림청 산불 발생 공공데이터 및 관련 기상/지형 데이터 활용
 - 데이터 출처:
-- **전처리 과정**: 
+
+---------------------
+### 기술 스택
+
+| 분류 | 기술/도구 |
+| :--- | :--- |
+| **언어** | ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+| **협업 툴** | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
+| **데이터 처리** | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+| **데이터 시각화** | ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Seaborn](https://img.shields.io/badge/Seaborn-%234470AD.svg?style=for-the-badge&logo=python&logoColor=white)
+
+-----
+
+## **전처리 과정**: 
 
 -EDA 단계(Before):
 결측치/이상치 탐색, 기상 변수 분포·계절성 파악, 산불 발생 시기·지역 히트맵 등 현상 이해 중심의 분석 수행.
 
 -ML 단계(After):
-날짜·행정구역 기준으로 모든 데이터셋을 통합하고, rain_code, wind_code 등 파생 변수 생성, 결측치 보간·평균 대체, SMOTE로 클래스 불균형(산불 발생 2%대)을 보정해 모델 학습에 최적화된 형태의 피처 세트 구축
+날짜·행정구역 기준으로 모든 데이터셋을 통합하고, 파생 변수 (실효습도, 농지비율, 도시산림 인접지수) 생성, 결측치 보간·평균 대체, SMOTE로 클래스 불균형을 보정해 모델 학습에 최적화된 형태의 피처 세트 구축
+
 
 ### 📋 Preprocessing Pipeline
 
@@ -73,17 +88,9 @@
 
 
 ----------------
-### 🔗 Data Sources
+## EDA
+(그래프 삽입 및 해석 추가)
 
----------------------
-### 기술 스택
-
-| 분류 | 기술/도구 |
-| :--- | :--- |
-| **언어** | ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
-| **협업 툴** | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
-| **데이터 처리** | ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-| **데이터 시각화** | ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Seaborn](https://img.shields.io/badge/Seaborn-%234470AD.svg?style=for-the-badge&logo=python&logoColor=white)
 
 ---------------------
 
@@ -98,11 +105,70 @@
 - **예측 결과**:
 
 - **기대 효과**: <br/>
-(1)선제적 대응: 산불 발생 위험도가 높은 시기를 사전에 파악하여 예방 순찰 및 인력 배치 최적화<br/>
-(2)피해 감소: 데이터 기반의 경보 시스템 구축을 통해 초기 진화 성공률을 높이고 산림 자원 손실 최소화<br/>
-(3)확장성: 구축된 모델을 타 지역이나 유사 기상 재난(가뭄 등) 예측 모델로 응용 가능
+
+(1) 선제적 대응: 산불 발생 위험도가 높은 시기를 사전에 파악하여 예방 순찰 및 인력 배치 최적화<br/>
+
+ - 산불 예방 측면:
+시·군·구별 산불 발생 확률을 사전에 제공함으로써, 고위험 지역 중심의 입산 통제·쓰레기 소각 단속·계도 활동을 효율적으로 집중할 수 있어 예방 인력·예산의 기회비용을 절감할 수 있다.
+
+(2) 피해 감소: 데이터 기반의 경보 시스템 구축을 통해 초기 진화 성공률을 높이고 산림 자원 손실 최소화<br/>
+
+- 초기 대응·자원 배치 측면:
+소방·산림청이 고위험 지역에 인력·장비·헬기 등을 선제적으로 배치하도록 지원해, 초기 진화 성공률을 높이고 대형 산불로 확산되기 전 대응할 수 있는 기반을 제공한다.
+
+(3) 확장성: 구축된 모델을 타 지역이나 유사 기상 재난(가뭄 등) 예측 모델로 응용 가능<br/>
+- 정책·연구 확장:
+본 모델 구조는 기상청 실시간 예보·위성/리모트 센싱 데이터와 결합해 실시간 산불 위험지도 서비스로 확장 가능하며, 향후 읍·면·동 단위로 해상도를 높인 고도화 모델 개발의 기초 자료로 활용될 수 있다.<br/><br/>
+
+
+​
+
  
 ---
+
+## 한계점
+
+---
+
+<br/>
+<br/>
+
+## 💭한 줄 회고
+```
+고아라
+```
+Keep
+문서화역량: README 작성 및 발표
+협업 워크플로우 준수 - Github flow 활용
+Problem
+데이터 정합성 검증 미흡 : 전처리 과정에서 누락된 로직을 사전에 인지하지 못한채 공유하여 데이터 파이프라인 상의 재작업 공수를 발생 시킴
+에러 인지 및 디버깅 숙련도 부족: 발생한 오류의 원인을 스스로 파악하고 수정하는 단계에서 병목현상 발생
+리스크 관리 부족: 초기단계에서 예견되었던 기술적 이슈에 대해 선제적으로 대응하지 못하고 반복적인 시행착오겪음
+Try
+전처리 검증 및 체크리스트 ( 셀프리뷰) - 데이터 전달 전 스키마 일치 여부와 결측치 확인할 수 있는 검증 스크립트나 체크리스트를 필수적으로 활용하겠음
+협업 소통방식의 구체화
+오류대응 프로세스 정립 - 스스로 해결할수 없는 기술적 난관에 부딪혔을때, 공식문서 확인 및 질문 가이드를 활용해 해결시간 단축 및 기술로그로 기록할 예정
+```
+정재훈
+```
+comment 작성
+```
+김은우
+```
+comment 작성
+```
+나혜린
+```
+comment 작성
+```
+박수영
+```
+comment 작성
+```
+<br/><br/>
+
+---
+
 ### 📂 폴더 구조 안내
 - **data/**: 데이터셋 파일 (raw, processed)
 - **notebooks/**: EDA 및 실험용 주피터 노트북
