@@ -17,23 +17,6 @@
 ### **기간: 2026년 2월 4일 ~ 2026년 2월 11일**
 ### **팀명: 🏆 ML 미니 프로젝트 1팀**
 
----
-
-### 🛠 Tech Stack
-
-#### 📚 Languages & Data Analysis
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white">
-
-#### 🤖 Machine Learning
-<img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"> <img src="https://img.shields.io/badge/XGBoost-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/LightGBM-green?style=for-the-badge"> 
-> **Models Used:** Decision Tree, Random Forest, Gradient Boosting, XGBoost, LightGBM
-
-#### 📊 Visualization
-<img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"> <img src="https://img.shields.io/badge/Seaborn-blue?style=for-the-badge">
-
-#### 🤝 Collaboration
-<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
-
 
 ---
  
@@ -106,7 +89,22 @@
 * **분석 논리**: 국립산림과학원(NIFoS), *2025년 산불 제대로 알기*
 * **지리 데이터 기준**: 통계청 시도별 행정구역 및 지목별 면적 통계 기준 적용
 ---
-  
+### 🛠 Tech Stack
+
+#### 📚 Languages & Data Analysis
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white">
+
+#### 🤖 Machine Learning
+<img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"> <img src="https://img.shields.io/badge/XGBoost-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/LightGBM-green?style=for-the-badge"> 
+> **Models Used:** Decision Tree, Random Forest, Gradient Boosting, XGBoost, LightGBM
+
+#### 📊 Visualization
+<img src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"> <img src="https://img.shields.io/badge/Seaborn-blue?style=for-the-badge">
+
+#### 🤝 Collaboration
+<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+
+---  
 
 # 5.📋**데이터 전처리 (Preprocessing Pipeline)**
 
