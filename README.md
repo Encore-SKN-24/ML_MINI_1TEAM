@@ -208,7 +208,7 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 모델의 예측력을 높이기 위해 산불 확산의 물리적 메커니즘을 분석하고, 이를 코드로 구현하였음.
 
 #### **[산불 확산 영향 요인 분석]**
-![산불확산에 영향 미치는 요인](./img/산불확산에 영향 미치는 요인.png)
+![alt text](<img/산불확산에 영향 미치는 요인.png>)
 > **인사이트:** 산불은 단순히 발생 여부를 넘어 기온, 풍속, 습도 및 지형적 특성이 복합적으로 작용하여 확산됨. 본 모델은 이러한 요인들을 독립 변수로 채택하여 학습을 진행하였음.
 
 #### **[핵심 파생변수: 실효습도(Effective Humidity)]**
@@ -480,7 +480,7 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
   <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
 </div>
 
-이후에 scale_pos_weight를 사용하여 하이퍼 파라미터 탐색
+이후에 scale_pos_weight를 사용하여 클래스 불균형을 해소 및 과적합 문제를 해결하였음
 
 <div align="left">
   <img src="https://github.com/user-attachments/assets/e0366e0f-4229-44b1-8e7a-e2aa06fb9dea" width="600">
@@ -488,6 +488,10 @@ smote로 산불이 1이 되는 값을 임의로 늘렸다. 그러나 precision�
 
 <div align="left">
   <img src="https://github.com/user-attachments/assets/fa7aa882-c974-4148-8e47-9307bf11cd20" width="600">
+</div>
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/373037fb-a794-4d0d-9876-52a38d1da1e0" width="600">
 </div>
 
 ---
