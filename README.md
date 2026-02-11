@@ -340,7 +340,7 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 #### 최적화: Optuna를 활용한 하이퍼파라미터 자동 튜닝으로 모델별 최적의 성능 도출.
 <br/>
 <br/>
-<img width="738" height="254" alt="Image" src="https://github.com/user-attachments/assets/ffe77b1a-09c8-49ef-aef1-d5c81f90d8f0" />
+<img width="738" height="254" alt="Image" src="https://github.com/user-attachments/assets/6bdbc234-66df-40e8-a72a-bb11bb983102" />
 
 <br/>
 <br/>
