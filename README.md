@@ -116,6 +116,10 @@
 - ML 단계(After):
 날짜·행정구역 기준으로 모든 데이터셋을 통합하고, 파생 변수 (실효습도, 농지비율, 도시산림 인접지수) 생성, 결측치 보간·평균 대체, SMOTE로 클래스 불균형을 보정해 모델 학습에 최적화된 형태의 피처 세트 구축
 
+<img width="327" height="574" alt="image" src="https://github.com/user-attachments/assets/102eea3a-3076-400a-8658-635c196ebc6b" />
+
+<img width="510" height="240" alt="image" src="https://github.com/user-attachments/assets/76e1db62-0c55-4248-b95b-481759c63af7" />
+
 
 | 번호 | 처리 내용 | 사용 데이터 | 처리 목적 | 세부 설명 |
 | :--- | :--- | :--- | :--- | :--- |
