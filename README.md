@@ -390,6 +390,16 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 ### [전체 모델 ROC Curve 비교]
 전 부스팅 계열 모델이 AUC 0.88~0.91의 높은 판별력을 보였으며, 특히 Random Forest와 LightGBM이 실무 배포에 가장 적합한 성능 균형을 보여주었음.
 
+| Model | Train/Test Acc | Accuracy | Recall | Precision | F1-Score | ROC-AUC |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **XGBoost** | 0.96 / 0.91 | 0.91 | 0.65 | 0.47 | 0.54 | 0.90 |
+| **LightGBM** | 0.99 / 0.93 | 0.93 | 0.59 | 0.53 | 0.56 | 0.91 |
+| **Gradient Boosting** | 0.86 / 0.84 | 0.84 | 0.81 | 0.32 | 0.45 | 0.91 |
+| **Random Forest** | 0.94 / 0.91 | 0.91 | 0.68 | 0.46 | 0.55 | 0.91 |
+| **Decision Tree** | 0.77 / 0.77 | 0.77 | 0.85 | 0.24 | 0.38 | 0.89 |
+
+
+
 <table style="width: 100%; border-collapse: collapse;"> <tr> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/f5da1754-31cf-434a-abf0-b1e738107358" width="100%"> <p><b>Model별 ROC Curve 비교</b></p> </td> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/3d6db174-5d8a-46a3-b08e-3905ab9af392" width="100%"> <p><b>최종 모델 Feature Importance</b></p> </td> </tr> </table>
 
 ***[특성 중요도 (Feature Importance)]모든 모델이 공통적으로 '실효습도'를 산불 발생의 가장 결정적인 요인으로 판단함. 이는 단기 습도보다 수일간 누적된 건조 상태가 발화에 더 직접적인 영향을 미친다는 도메인 지식과 일치하는 결과임***
