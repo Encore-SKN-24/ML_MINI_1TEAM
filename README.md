@@ -1,7 +1,7 @@
 📑Table of Contents
-1. 프로젝트 소개 
-2. 팀원 소개
-3. 프로젝트 개요
+1. 팀 소개 
+2. 프로젝트 개요
+3. 기술 스택
 4. 데이터셋 정보
 5. 데이터 전처리 과정
 6. EDA
@@ -10,16 +10,74 @@
 9. 회고
 
 
+# 1. 👥 **팀 소개**
 
-# 1. **프로젝트 소개 (Title)**
+ ### **팀명: 🏆 ML 미니 프로젝트 1팀**
+| <img src="https://github.com/user-attachments/assets/192cc577-c7ac-49a9-9855-2230cd1cc55c" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/3cb641b2-cfc5-4c3a-a10a-e0222ef9c673" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a60d634f-6fba-4cfb-b74e-b56d6be3f358" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a32be587-2de6-4884-8f66-0a4b303dfe53" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a367b378-429e-4117-85fa-bd968867ee28" width="150" height="150"> |
+|:---:|:---:|:---:|:---:|:---:|
+| **고아라** | **정재훈** | **김은우** | **나혜린** | **박수영** |
+|  [![github - Akoh-0909](https://img.shields.io/badge/Akoh--0909-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Akoh-0909) | [![github - JeaHoon-J](https://img.shields.io/badge/JeaHoon--J-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JeaHoon-J) | [![github - whitehole17](https://img.shields.io/badge/whitehole17-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/whitehole17) | [![github - ](https://img.shields.io/badge/nngpfls-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nngpfls) | [![github - suyoung6279](https://img.shields.io/badge/suyoung6279-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/suyoung6279) |
+| | | | | |
 
-###  **주제:🌲기상 데이터를 활용한 ML 기반 산불 발생 예측 및 예방 솔루션(Meteorological Data-Driven ML Model for Forest Fire Prediction and Prevention)**
-### **기간: 2026년 2월 4일 ~ 2026년 2월 11일**
-### **팀명: 🏆 ML 미니 프로젝트 1팀**
 
 ---
 
-### 🛠 Tech Stack
+# 2.🎯**프로젝트 개요(Overview)**
+
+###  **주제:🌲기상 데이터를 활용한 ML 기반 산불 발생 예측 및 예방 솔루션(Meteorological Data-Driven ML Model for Forest Fire Prediction and Prevention)**
+
+### **기간: 2026년 2월 4일 ~ 2026년 2월 11일**
+
+### 프로젝트 주제 선정 배경 및 목표: 
+
+본 프로젝트는 데이터 기반의 의사결정을 통해 사회적 난제를 해결하고자 하는 고민에서 시작되었다.
+
+**1. 데이터 분석의 실전적 확장**
+
+이전 EDA과정에서 다루었던 기상데이터를 보다 실질적인 사회적 이슈에 연결해보고자 했다. 단순 상관분석을 넘어, 머신러닝 모델링을 통해 실제 현장에서 활용 가능한 '예측 시스템'으로 확장하는 것을 목표로 삼았다.
+
+**2. 산불 위기 대응을 위한 예방 체계의 필요성**
+
+최근 기후변화로 인한 건조지수 상승과 강풍, 그리고 인위적 요인으로 인해 발생한 대형 산불은 더이상 특정 지역의 사고가 아닌 국가적인 구조적 재난이 되었다. 산불로 인한 인명, 재산, 환경피해가 반복적으로 언론에 보도되고 있는 현재, 산불 피해 규모와 회복 비용, 그리고 그 여파가 지역사회와 생태계에 미치는 장기적 영향에 주목하게 되었고, 데이터 분석 역량을 활용해 이 문제에 기여할 수 있는 방법을 고민하게 되었다.
+
+[10년간 산불발생 현황]
+<img width="1526" height="665" alt="Image" src="https://github.com/user-attachments/assets/d3852006-d6e2-4a2a-aa31-bfee7bcd72a1" />
+
+[10년간 원인별 산불발생 현황]
+<img width="1537" height="812" alt="Image" src="https://github.com/user-attachments/assets/1932bf70-ca8c-40a2-a32b-5eac84c8e774" />
+
+[10년간 지역별 산불발생 현황]
+<img width="1378" height="731" alt="Image" src="https://github.com/user-attachments/assets/c84dca5f-cb7c-456e-b1f6-b0711fc091a0" />
+
+[10년간 지역별 산불발생 최대발생지역 Top 3 & 최대피해지역 Top 2]
+<img width="1383" height="730" alt="Image" src="https://github.com/user-attachments/assets/0938e859-9707-44c8-b2bf-777f144cede4" />
+
+[지역별 산불 피해현황 - 2026년 1~2월]
+<table> <tr> <td><img src="https://github.com/user-attachments/assets/5b67a56d-85ad-4b0e-8e61-d11749ba1f61" width="100%"></td> <td><img src="https://github.com/user-attachments/assets/d746ae06-228f-40ac-9938-85599562f79d" width="100%"></td> </tr> </table>
+
+[원인별 산불발생 통계 - 2026년 1~2월]
+<table> <tr> <td><img src="https://github.com/user-attachments/assets/e837eb82-b6b1-4c40-86ae-f9220b152cc9" width="100%"></td> <td><img src="https://github.com/user-attachments/assets/5b2c4ac8-995b-44a6-8330-5dba8453620b" width="100%"></td> </tr> </table>
+
+*[자료출처: 산불 발생 데이터: [산림청 산불정책기술플랫폼 실시간 산불 정보](https://fd.forest.go.kr/ffas/)]*
+
+<br/>
+
+-> **산불 위기대응**: 대형 산불에 대한 원인 데이터 기반의 예방 및 경보 체계 필요성 증대
+
+**3. 실용적 가치 창출: 기술에서 솔루션으로**
+
+이에 본 프로젝트는 과거 기상 및 산림 정보를 통합 분석하여 산불 발생 가능성을 사전에 예측하였다. <br/>
+이를 통해:
+
+- **행정 현장의 자원 최적화**: 인력과 장비를 고위험 지역에 선제적으로 배치할 수 있도록 지원
+  
+- **피해 최소화**: 데이터에 기반한 정밀한 경보 시스템을 구축하여 초기 진화 성공률을 높이고, 산림 자원 및 인명 손실을 막는 유의미한 솔루션을 제공하고자 함
+<br/>
+
+
+---
+
+# 3. 🛠 Tech Stack
 
 #### 📚 Languages & Data Analysis
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white">
@@ -37,47 +95,7 @@
 
 ---
  
-# 2. 👥 **팀원 소개**
- 
-| <img src="https://github.com/user-attachments/assets/192cc577-c7ac-49a9-9855-2230cd1cc55c" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/3cb641b2-cfc5-4c3a-a10a-e0222ef9c673" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a60d634f-6fba-4cfb-b74e-b56d6be3f358" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a32be587-2de6-4884-8f66-0a4b303dfe53" width="150" height="150"> | <img src="https://github.com/user-attachments/assets/a367b378-429e-4117-85fa-bd968867ee28" width="150" height="150"> |
-|:---:|:---:|:---:|:---:|:---:|
-| **고아라** | **정재훈** | **김은우** | **나혜린** | **박수영** |
-|  [![github - Akoh-0909](https://img.shields.io/badge/Akoh--0909-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Akoh-0909) | [![github - JeaHoon-J](https://img.shields.io/badge/JeaHoon--J-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/JeaHoon-J) | [![github - whitehole17](https://img.shields.io/badge/whitehole17-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/whitehole17) | [![github - ](https://img.shields.io/badge/nngpfls-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nngpfls) | [![github - suyoung6279](https://img.shields.io/badge/suyoung6279-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/suyoung6279) |
-| | | | | |
-
-
-
----
-
-
-
-# 3. 🎯 **프로젝트 개요 (Overview)**
-
-### 주제 선정 배경: 
-본 프로젝트는 데이터 기반의 의사결정을 통해 사회적 난제를 해결하고자 하는 고민에서 시작되었다.
-
-**1. 데이터 분석의 실전적 확장**
-
-이전 EDA과정에서 다루었던 기상데이터를 보다 실질적인 사회적 이슈에 연결해보고자 했다. 단순 상관분석을 넘어, 머신러닝 모델링을 통해 실제 현장에서 활용 가능한 '예측 시스템'으로 확장하는 것을 목표로 삼았다.
-
-**2. 산불 위기 대응을 위한 예방 체계의 필요성**
-
-최근 기후변화로 인한 건조지수 상승과 강풍, 그리고 인위적 요인으로 인해 발생한 대형 산불은 더이상 특정 지역의 사고가 아닌 국가적인 구조적 재난이 되었다. 산불로 인한 인명, 재산, 환경피해가 반복적으로 언론에 보도되고 있는 현재, 산불 피해 규모와 회복 비용, 그리고 그 여파가 지역사회와 생태계에 미치는 장기적 영향에 주목하게 되었고, 데이터 분석 역량을 활용해 이 문제에 기여할 수 있는 방법을 고민하게 되었다.
-
--> **산불 위기대응**: 대형 산불에 대한 원인 데이터 기반의 예방 및 경보 체계 필요성 증대
-
-**3. 실용적 가치 창출: 기술에서 솔루션으로**
-
-이에 본 프로젝트는 과거 기상 및 산림 정보를 통합 분석하여 산불 발생 가능성을 사전에 예측하였다. <br/>
-이를 통해:
-
-- **행정 현장의 자원 최적화**: 인력과 장비를 고위험 지역에 선제적으로 배치할 수 있도록 지원
-  
-- **피해 최소화**: 데이터에 기반한 정밀한 경보 시스템을 구축하여 초기 진화 성공률을 높이고, 산림 자원 및 인명 손실을 막는 유의미한 솔루션을 제공하고자 함
-
-
-<br/>
-
+# 4.📂 **데이터 출처 및 참고 문헌**
 
 ### 🔗 뉴스 및 자료 출처 (References)
 
@@ -91,10 +109,6 @@
 <br/>
 <br/>
 
----
-
-# 4.📂 **데이터 출처 및 참고 문헌**
-
 ### 📊 분석 데이터셋 (Datasets)
 * **산불 발생 데이터**: [산림청 산불정책기술플랫폼 실시간 산불 정보](https://fd.forest.go.kr/ffas/)
 * **기상 데이터**: [기상청 공공데이터포털 ASOS/AWS 관측 데이터](https://data.kma.go.kr/)
@@ -105,15 +119,17 @@
 ### 📖 참고 문헌 및 연구 자료
 * **분석 논리**: 국립산림과학원(NIFoS), *2025년 산불 제대로 알기*
 * **지리 데이터 기준**: 통계청 시도별 행정구역 및 지목별 면적 통계 기준 적용
+
+
 ---
   
 
 # 5.📋**데이터 전처리 (Preprocessing Pipeline)**
 
-- EDA 단계(Before):
+- EDA 단계:
 결측치/이상치 탐색, 기상 변수 분포·계절성 파악, 산불 발생 시기·지역 히트맵 등 현상 이해 중심의 분석 수행.
 
-- ML 단계(After):
+- ML 단계:
 날짜·행정구역 기준으로 모든 데이터셋을 통합하고, 파생 변수 (실효습도, 농지비율, 도시산림 인접지수) 생성, 결측치 보간·평균 대체, SMOTE로 클래스 불균형을 보정해 모델 학습에 최적화된 형태의 피처 세트 구축
 
 <img width="327" height="574" alt="image" src="https://github.com/user-attachments/assets/102eea3a-3076-400a-8658-635c196ebc6b" />
@@ -266,22 +282,9 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 | `발생원인_구분/세부원인/기타` | 산불 발생 사유 (실화, 소각 등) | 원인 분석용 |
 | `피해면적_합계` | 산불로 인한 총 소실 면적 | - |
 
-### 6.6. 변수 간 상관관계 분석 (Correlation Analysis)
-
-산불 발생 여부와 주요 기상 및 지표 데이터 간의 상관성 분석 및 변수의 유효성 검증.
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8653d96c-532a-49f1-93e3-1e12b59efb41" width="80%">
-</p>
-
-* **실효습도**: 산불 발생과 음의 상관관계를 가짐 -> 실효습도가 낮을수록(나무나 풀이 바짝 마를수록) 산불은 더 자주 발생
-* **인적 요인(밭 비율)**: 약한 양의 상관관계를 보여, 농지 소각 행위가 실제 산불의 주요 원인=사람이 있는 곳에 불이 난다라는 통계를 입증함.
-* **평균기온, 강수량, 풍속과는 낮은 상관관계**:실효습도 같은 복합 변수가 더 유의미함을 확인하였음.
-
-  
 ---
 
-### 6.7. 날씨 데이터 (Weather Data)
+### 6.6. 날씨 데이터 (Weather Data)
 전국 기상 관측 정보
 
 | 컬럼명 | 설명 | 단위 |
@@ -296,7 +299,7 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 
 ---
 
-## 6.8. 최종 분석용 데이터셋 (Final Feature Set)
+### 6.7. 최종 분석용 데이터셋 (Final Feature Set)
 모델 학습을 위해 전처리가 완료된 핵심 변수 리스트 (62,018 X 9)
 
 | 컬럼명 | 설명 | 중요도 및 역할 |
@@ -311,290 +314,177 @@ $$H_e = (1 - r)(h_0 + r^1h_1 + r^2h_2 + r^3h_3 + r^4h_4 + r^5h_5)$$
 | **도시_산림_인접지수** | 도시와 산림의 경계 밀접도 | 인위적 실화 가능성 및 인명 피해 위험도 산출 |
 | **산불 유무** | 산불 발생 여부 (0/1) | **Target 변수:** 분류(Classification) 모델의 목적값 |
 
+---
 
+### 6.8. 변수 간 상관관계 분석 (Correlation Analysis)
+
+산불 발생 여부와 주요 기상 및 지표 데이터 간의 상관성 분석 및 변수의 유효성 검증.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8653d96c-532a-49f1-93e3-1e12b59efb41" width="80%">
+</p>
+
+* **실효습도**: 산불 발생과 음의 상관관계를 가짐 -> 실효습도가 낮을수록(나무나 풀이 바짝 마를수록) 산불은 더 자주 발생
+* **인적 요인(밭 비율)**: 약한 양의 상관관계를 보여, 농지 소각 행위가 실제 산불의 주요 원인=사람이 있는 곳에 불이 난다라는 통계를 입증함.
+* **평균기온, 강수량, 풍속과는 낮은 상관관계**:실효습도 같은 복합 변수가 더 유의미함을 확인하였음.
+<br/>
+<br/>
 
 ---------------------
 
+
 # 7. 📊 **모델링 및 성능 평가 (Modeling & Evaluation)**
 
-## 7.1. 모델별 주요 결과 요약
+## 7.1. 모델링 전략 및 워크플로우 (Performance Improvement Flow)
 
-| 순서 | Model | Key Insights & Performance | Optimization |
-| :---: | :--- | :--- | :--- |
-| 01 | **Decision Tree** | 직관적인 규칙 기반 분석을 통해 **실효습도** 등 초기 주요 변수 파악. (Recall 85% 확보) | Max Depth 제한으로 과적합 방지 |
-| 02 | **Random Forest** | 여러 트리를 결합해 안정성 확보. **정확도(91%)**와 **AUC(0.91)**에서 최상위 성능 기록. | Bagging 및 특성 선택 최적화 |
-| 03 | **Gradient Boosting** | 오차를 순차적으로 보정하여 **AUC 0.88**의 높은 판별력 확보. | Optuna 하이퍼파라미터 최적화 |
-| 04 | **XGBoost** | 대규모 데이터 처리에 최적화. `Scale_pos_weight` 적용으로 **클래스 불균형** 해소. | 정밀 파라미터 튜닝 |
-| 05 | **LightGBM** | 학습 속도가 가장 빠르며 리소스 효율성이 높은 최신 부스팅 기법 활용. | Optuna 자동 튜닝 |
+성능 향상을 위해 단일 모델에서 복합 앙상블 모델로 단계별 고도화를 진행하였으며, 공통적으로 데이터 불균형 해소와 하이퍼파라미터 최적화 과정을 거쳤음.
 
-> **📊 분석 요약:** 모든 모델에서 '실효습도'가 산불 발생의 핵심 지표임을 재확인하였으며, 실무 배포 시 성능과 속도 면에서 **LightGBM**과 **Random Forest**의 활용 가치가 가장 높음을 입증하였음.
+**1단계: Base Model 구축** (Decision Tree) → 초기 주요 변수 파악 및 기준 성능 설정
 
+**2단계: 모델 고도화** (Random Forest) → 배깅(Bagging)을 통한 과적합 방지 및 안정성 확보
 
+**3단계: 부스팅 앙상블 및 최적화** (GBM, XGBoost, LightGBM) → 오차 보정 및 Optuna/GridSearch를 통한 성능 극대화
 
-## 7.2. 모델링 전략 및 워크플로우
+### 🛠️ 공통 적용 기법 (Optimization Strategy)
 
-#### 목표 지표: 산불은 발생 징후를 놓치지 않는 것이 최우선이므로, **재현율(Recall)**과 AUC-ROC를 핵심 평가지표로 설정함.
+- **데이터 불균형 대응**: 산불 미발생 데이터가 압도적인 특성을 고려하여 SMOTE(Over-sampling) 및 scale_pos_weight 파라미터를 모든 모델에 공통 적용.
 
-#### 데이터 불균형 대응: 산불 미발생 데이터가 압도적으로 많은 특성을 고려하여 SMOTE(Over-sampling) 및 scale_pos_weight 파라미터를 적용해 학습 편향을 방지함.
+- **하이퍼파라미터 자동 튜닝**: Optuna와 GridSearchCV를 활용하여 모델별 최적의 조합(Learning Rate, Depth, Estimators 등)을 도출.
 
-#### 최적화: Optuna를 활용한 하이퍼파라미터 자동 튜닝으로 모델별 최적의 성능 도출.
-<br/>
-<br/>
-<img width="738" height="254" alt="Image" src="https://github.com/user-attachments/assets/6bdbc234-66df-40e8-a72a-bb11bb983102" />
-
-<br/>
-<br/>
-<br/>
-<br/>
-- **(1) 사용한 모델: Decision Tree & Random Forest**
-
-#### [하이퍼 파라미터 튜닝 결과]
-
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/e55a8538-64c1-46de-bf60-008c6c8ad921" height="400px">
-      <p><b>Decision Tree 파라미터</b></p>
-    </td>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/1cb19cab-a647-4b9e-96b4-3042159adf40" height="400px">
-      <p><b>Random Forest 파라미터</b></p>
-    </td>
-  </tr>
-</table>
+----
 
 
-모델 성능 극대화를 위해 **Optuna**를 활용하여 하이퍼파라미터 튜닝을 수행하였음.
-* **Decision Tree**: 과적합 방지를 위해 **최대 깊이(max_depth)를 5**로 제한함.
-* **Random Forest**: **265개의 결정 트리**와 **'log2' 특성 선택 방식**을 통해 예측 안정성을 확보한 최적의 조합을 도출하였음.
+## 7.2. 단계별 모델링 과정 및 결과
 
 
+### Step 1. 기준 모델 및 트리 기반 확장 (DT & RF) : 
 
-#### [두 모델 성능 비교]
+가장 직관적인 Decision Tree로 시작하여, 이를 확장한 Random Forest를 통해 성능을 1차적으로 향상시킴.
 
-!<img width="493" height="253" alt="Image" src="https://github.com/user-attachments/assets/467b77f6-081d-4439-ba45-9401c9f34078" />
+| 모델 | 주요 최적화 내용 | 주요 성과 |
+| :---: | :--- | :--- |
+|  **Decision Tree** | Max Depth 제한 (5) | Recall 85% 확보, 실효습도 영향력 확인 |
+| **Random Forest** | 265개 결정 트리, log2 특성 선택 | 정확도 91%, AUC 0.91 기록 (안정성 강화) |
+
+<table style="width: 100%; border-collapse: collapse;"> <tr> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/467b77f6-081d-4439-ba45-9401c9f34078" width="100%"> <p><b>[성능 비교] DT vs RF</b></p> </td> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/a0d74db7-737a-4ae8-b9a0-458bda583034" width="100%"> <p><b>[판별력] RF ROC Curve (AUC 0.91)</b></p> </td> </tr> </table>
 
 
+### Step 2. 부스팅 앙상블을 통한 오차 극복 (GBM, XGB, LGBM)
 
-#### [Classification Report]
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/40f438cc-099f-4bf4-a020-5c0c1b9c0b43" height="250px">
-      <p><b>모델 성능 분석 1</b></p>
-    </td>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/7f9be420-bf78-4354-9acf-59bbcd393927" height="250px">
-      <p><b>모델 성능 분석 2</b></p>
-    </td>
-  </tr>
-</table>
+단일 트리의 한계를 극복하기 위해 오차를 순차적으로 개선하는 부스팅 기법을 도입하고, 자동 튜닝 도구(Optuna)를 통해 성능을 정밀하게 조정
 
-> **Decision Tree**는 **85%의 높은 재현율(Recall)**로 산불 발생 징후를 민감하게 포착하지만, 낮은 정밀도로 인해 오탐지가 발생하는 한계가 있었음. 이를 개선한 **Random Forest**는 **정밀도를 46%까지** 끌어올리고 **전체 정확도를 91%로 향상**시켜, 모델의 안정성과 예측 신뢰도를 동시에 확보하였음.
+**[부스팅 모델별 최적화 포인트]**
+- **Gradient Boosting**: 학습률과 트리 깊이의 세밀한 조정을 통해 AUC 0.88 달성.
+
+- **XGBoost**: scale_pos_weight 집중 튜닝으로 클래스 불균형에 따른 오탐지율 감소.
+
+- **LightGBM**: 빠른 학습 속도를 바탕으로 가장 넓은 범위의 하이퍼파라미터 탐색 수행.
+
+<table style="width: 100%; border-collapse: collapse;"> <tr> <td style="width: 33%; text-align: center;"> <img src="https://github.com/user-attachments/assets/35231abd-31c1-4755-a780-99cda409cbcc" width="100%"> <p><b>GBM Optuna 과정</b></p> </td> <td style="width: 33%; text-align: center;"> <img src="https://github.com/user-attachments/assets/373037fb-a794-4d0d-9876-52a38d1da1e0" width="100%"> <p><b>XGBoost 하이퍼파라미터</b></p> </td> <td style="width: 33%; text-align: center;"> <img src="https://github.com/user-attachments/assets/57d3c10a-1f44-4179-82d1-90ed6d306d89" width="100%"> <p><b>LGBM 최적 파라미터</b></p> </td> </tr> </table>
+
+
+## 7.3. 최종 성능 비교 및 분석 (Comprehensive Analysis)
+
+모든 과정을 거친 후, 전체 모델의 성능 지표와 변수 중요도를 통합 분석하여 최적의 모델을 선정하였음.
+
+### [전체 모델 ROC Curve 비교]
+전 부스팅 계열 모델이 AUC 0.88~0.91의 높은 판별력을 보였으며, 특히 Random Forest와 LightGBM이 실무 배포에 가장 적합한 성능 균형을 보여주었음.
+
+<table style="width: 100%; border-collapse: collapse;"> <tr> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/f5da1754-31cf-434a-abf0-b1e738107358" width="100%"> <p><b>Model별 ROC Curve 비교</b></p> </td> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/3d6db174-5d8a-46a3-b08e-3905ab9af392" width="100%"> <p><b>최종 모델 Feature Importance</b></p> </td> </tr> </table>
+
+***[특성 중요도 (Feature Importance)]모든 모델이 공통적으로 '실효습도'를 산불 발생의 가장 결정적인 요인으로 판단함. 이는 단기 습도보다 수일간 누적된 건조 상태가 발화에 더 직접적인 영향을 미친다는 도메인 지식과 일치하는 결과임***
 
 
 
-#### [특성 중요도 (Feature Importance)]
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/1ba44a0e-692a-46ce-9dc7-1ec4032ca0dc" style="width: 100%;">
-      <p><b></b></p>
-    </td>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/c57fd532-b6e5-44f0-9a42-f3190163244f" style="width: 100%;">
-      <p><b></b></p>
-    </td>
-  </tr>
-</table>
+### [핵심 인사이트]
 
-두 모델 모두 '**실효습도**'를 산불 발생의 가장 결정적인 요인으로 판단하였음.
-* **Decision Tree**: 실효습도와 토지 피복도(논 비율) 등 **특정 상위 변수**에 의존도가 높음.
-* **Random Forest**: 실효습도 외에도 상대습도, 기온, 풍속 등 **기상 변수들을 고르게 반영**하여 예측의 다각화를 이루었으며, 기상 데이터의 복합적인 상호작용을 더 잘 학습함.
+- **공통 핵심 변수**: 모든 모델에서 **'실효습도'**가 압도적인 1위 변수로 도출됨. (단기 기상보다 누적 건조 상태가 중요함을 입증)
+  * **Decision Tree**: 실효습도와 토지 피복도(논 비율) 등 **특정 상위 변수**에 의존도가 높음.
+  * **Random Forest**: 실효습도 외에도 상대습도, 기온, 풍속 등 **기상 변수들을 고르게 반영**하여 예측의 다각화를 이루었으며, 기상 데이터의 복합적인 상호작용을 더 잘 학습함.
 
-
-
-#### [ROC Curve & AUC]
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/152f8a5c-b129-48d1-92d2-a69c8b938df4" style="width: 100%;">
-      <p><b></b></p>
-    </td>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/a0d74db7-737a-4ae8-b9a0-458bda583034" style="width: 100%;">
-      <p><b></b></p>
-    </td>
-  </tr>
-</table>
-
-ROC Curve 분석 결과, **Random Forest(AUC = 0.91)**가 Decision Tree보다 높은 수치를 기록하며 전반적인 예측 판별력이 우수함을 입증함. 두 모델 모두 좌상단으로 치우친 **이상적인 곡선 형태**를 보여 유효성을 확보하였으나, **Random Forest가 AUC에서 0.02 가량 앞서며** 미세한 성능 우위를 점했음.
-
-
----
-
-- **(2) 사용한 모델: Gradient Boosting (앙상블)**
-  
-- **성능향상을 위한 노력**:
-  - Hyperparameter Tuning - Optuna 라이브러리 활용하여 최적의 하이퍼파라미터 조합을 탐색.
-  - 학습률(learning_rate), 트리의 개수(n_estimators), 트리의 깊이(max_depth)등을 세밀하게 조정하여 과적합을 방지하고 일반화 성능을 높임
-- **성능결과 및 해석**:
-  - ROC Curve: AUC 수치가 0.88로 측정됨. 이는 모델이 산불 발생 여부(Class 0, 1)를 매우 높은 확률로 정확하게 판별하고 있음을 의미.
-
-  - Feature Importance: 모델이 예측 시 가장 중요하게 참고한 변수는 **'실효습도'**와 **'평균 상대습도'**였음. 이는 산불 예측에 있어 대기의 건조 상태가 결정적인 역할을 한다는 데이터적 근거가 됨. (대기 건조도의 누적치가 산불 위험을 결정짓는 중요한 물리적 요인임을 입증)
-    
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td colspan="2" style="text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/35231abd-31c1-4755-a780-99cda409cbcc" width="80%">
-      <p><b>Gradient Boosting 하이퍼파라미터 튜닝 과정 (Optuna)</b></p>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/0b495d3b-caf3-45f4-ae82-658aa3140046" style="width: 100%;">
-      <p><b>ROC Curve (AUC = 0.88)</b></p>
-    </td>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/6e919e0c-06e4-46f4-ac75-ffcad7c6f02b" style="width: 100%;">
-      <p><b>Feature Importance</b></p>
-    </td>
-  </tr>
-</table>
-
-
----
-
-- **(3) 사용한 모델: XGBoost**
-
-<div align="left">
-  <img src="https://github.com/user-attachments/assets/d2d78eb1-1929-4914-86b3-a8f2cae54881" alt="auc-roc와 혼동행렬" width="600">
-  <p><i>auc-roc 곡선</i></p>
-</div>
-
-<div align="left">
-  <img src="https://github.com/user-attachments/assets/1e122378-2e9c-4186-859e-1ed9abbe4705" alt="auc-roc와 혼동행렬" width="600">
-  <p><i>혼동행렬</i></p>
-</div>
-
-- **성능 향상을 위한 노력**: 
-
-scale_pos_weight로 클래스 불균형을 해소 
-<div align="left">
-  <img src="https://github.com/user-attachments/assets/8e39b9cc-9f40-4169-a954-0a50d33a7555" width="600">
-</div>
-
-
-<div align="left">
-  <img src="https://github.com/user-attachments/assets/e0366e0f-4229-44b1-8e7a-e2aa06fb9dea" width="600">
-</div>
-
-GridSearchCV로 하이퍼 파라미터 찾기 및 과적합 문제를 해결하였음
-
-<div align="left">
-  <img src="https://github.com/user-attachments/assets/373037fb-a794-4d0d-9876-52a38d1da1e0" width="600">
-</div>
-
-<div align="left">
-  <img src="https://github.com/user-attachments/assets/fa7aa882-c974-4148-8e47-9307bf11cd20" width="600">
-</div>
-
----
-
-- **(4) 사용한 모델: LightGBM**
-- **성능 향상을 위한 노력**: optuna 활용 최적의 하이퍼파라미터 활용
-<img width="726" height="425" alt="1  lightGBM 하이퍼파라미터" src="https://github.com/user-attachments/assets/57d3c10a-1f44-4179-82d1-90ed6d306d89" /><br/>
-
-<table style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/f5da1754-31cf-434a-abf0-b1e738107358" style="width: 100%;">
-      <p><b>⭐ Model 별 ROC Curve 비교</b></p>
-    </td>
-    <td style="width: 50%; text-align: center; vertical-align: top;">
-      <img src="https://github.com/user-attachments/assets/3d6db174-5d8a-46a3-b08e-3905ab9af392" style="width: 100%;">
-      <p><b>⭐ Feature Importances (LightGBM)</b></p>
-    </td>
-  </tr>
-</table>
-
-
-
----
-
+- **성능 향상 결과**: 단순 트리 모델 대비 앙상블 모델 도입 시 정밀도(Precision)가 최대 46% 향상되어 오탐지 문제를 크게 개선함.
 
 ​
-## 7.3. 종합성능 분석 및 시각화
-
-[모델 성능 비교 및 평가]
-Random Forest는 Decision Tree의 한계인 낮은 정밀도를 46%까지 끌어올리며 전체 정확도를 91%로 향상시켰음. 반면 부스팅 계열 모델들은 AUC 0.88~0.91의 이상적인 곡선을 그리며 산불 발생 여부에 대한 강력한 판별력을 입증할 수 있었음.
-
-<table style="width: 100%; border-collapse: collapse;"> <tr> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/152f8a5c-b129-48d1-92d2-a69c8b938df4" style="width: 100%;"> <p><b>ROC Curve (Random Forest)</b></p> </td> <td style="width: 50%; text-align: center;"> <img src="https://github.com/user-attachments/assets/f5da1754-31cf-434a-abf0-b1e738107358" style="width: 100%;"> <p><b>Model 별 ROC Curve 비교</b></p> </td> </tr> </table>
-
-[특성 중요도 (Feature Importance)]
-모든 모델이 공통적으로 **'실효습도'**를 산불 발생의 가장 결정적인 요인으로 판단함. 이는 단기 습도보다 수일간 누적된 건조 상태가 발화에 더 직접적인 영향을 미친다는 도메인 지식과 일치하는 결과임.
-
-<div align="center"> <img src="https://github.com/user-attachments/assets/3d6db174-5d8a-46a3-b08e-3905ab9af392" width="80%"> <p><i>최종 모델(LightGBM) 특성 중요도 분석 결과</i></p> </div>
 
 
----
+-----
 
 
 
-# 8. **Conclusion & Discussion**
+# 8. 🏁**Conclusion & Discussion**
 
 ## **8.1. 최종 모델 예측 결과 요약**
 
-본 프로젝트는 Random Forest, Gradient Boosting, XGBoost, LightGBM, Decision Tree 총 5가지 모델을 비교 분석하였음.
+본 프로젝트는 5가지 머신러닝 모델(Random Forest, Gradient Boosting, XGBoost, LightGBM, Decision Tree)을 비교 분석하여 산불 예측의 최적 알고리즘을 도출하였음.
 
-- **성능 우수성**: 전반적으로 모든 모델에서 AUC 0.88 ~ 0.91의 높은 수치를 기록하며 산불 발생에 대한 우수한 판별력을 보였음.특히 Random Forest와 LightGBM이 정확도(91%)와 재현율(Recall) 측면에서 안정적인 성능을 보였음.
+- **성능 우수성**: 전 모델 AUC 0.88 ~ 0.91 달성. 특히 Random Forest와 LightGBM이 정확도(91%)와 재현율(Recall) 측면에서 가장 안정적인 성능을 보임.
 
-- **핵심 변수**: 모든 모델에서 **'실효습도'**가 가장 중요한 변수로 도출되었음. 이는 단발성 기상 현상보다 누적된 건조 상태가 산불의 결정적 원인임을 시사하는 바임. 또한, **'논밭 비율'**과 'WUI' 지표가 주요 변수로 작용하여 인적 요인에 의한 산불 발생 가능성을 모델이 잘 학습했음을 확인하였음.
+- **핵심 변수**: 모든 모델에서 **'실효습도'**가 가장 중요한 변수로 도출됨. 이는 단발성 기상 현상보다 누적된 건조 상태가 발화의 결정적 원인임을 시사함.
+
+- **인적 요인 반영**: '논밭 비율'과 'WUI' 지표가 주요 변수로 작용하여, 단순 자연 발화가 아닌 인적 요인에 의한 산불 발생 가능성을 모델이 효과적으로 학습함.
+
 
 ## **8.2. 프로젝트 기대효과**
 
-1. **데이터 기반 선제적 행정**: 감에 의존한 순찰이 아닌, 모델이 제시하는 고위험 지역(시·군·구 단위)에 예방 인력과 진화 헬기를 선제적으로 배치하여 골든타임을 확보할 수 있음.
-   -> 자원 배치의 '선택과 집중' (Efficiency)<br/>
-   : 현실적으로 모든 산에 산불 감시원을 배치하거나 24시간 헬기를 띄우는 것은 얘산과 인력이 부족하기 때문에 불가할 것으로 예상된다. 따라서 기존에 봄/가을철 조심 기간에 모든 산림 지역에 일괄적으로 인력을 배치하였던 방식을 본 모델을 적용한 후 실효습도가 30% 이하이면서 농지 비율이 높은 지역을 위주로 해당 지역 순찰 횟수를 1일 5회, 소방 헬기 전진 배치 거점을 모델이 찍어준 고위험군 군락 근처로 이동시켜 한정된 예산으로 방어력을 높이는 효과를 볼 수 있다고 예상됨.
+1️⃣ **데이터 기반 선제적 행정 (Efficiency)**:
+   -> 기존의 일괄적 인력 배치에서 벗어나, 고위험 지역에 자원을 '선택과 집중'할 수 있음.
 
-2. **대국민 맞춤형 경보**: 단순 '산불 조심' 재난 문자가 아닌, 지역별 농지 소각 위험도 등을 반영한 정밀 경보 서비스 시스템의 기초 자료로 활용 가능.
-   -> 핀포인트(Pin-point) 재난 문자 및 계도(Targeting)<br/>
-   : 모두에게 보내는 재난 문자는 사람들이 무시하기 쉬움. 하지만 모델은 '누가' 불을 낼 가능성이 높은지 알려줄 수 있음. 기존에 전 국민에게 건조하니 산불조심하세요 라는 문자를 보냈었지만, 모델 적용 후, 농번기에 실효습도가 임계치 이하로 떨어지면, 농지비율이 높은 마을의 이장님들에게 전용 알림을 보내어 구체적인 가이드가 가능해짐.
-    
-3. **경제적 손실 최소화**: 초기 진화 성공률을 높임으로써 연간 수천억 원에 달하는 산림 복구 비용 및 탄소 흡수원 소실에 따른 간접적 경제 피해를 줄일 수 있음.
-   -> 'WUI(도시 산림 인접지)' 관리 정책 수립 (Infrastructure)<br/>
-   : WUI 지수가 높다는 것은 산불이 났을 때 인명 피해로 직결될 위험이 크다는 뜻. 기존에는 산불이 난 뒤에야 민가 피해를 수습하였다면, 모델 적용 후에는 모델이 지목한 WUI 고위험 지역을 대상으로 '산불 완충 지대'를 우선 설치, 고위험군으로 분류된 마을 주변의 잡목을 우선 제거하거나, 방화수림을 조성하고, 비상 소화전 설치 우선순위를 결정하는 등 도시 계획의 근거 데이터가 되며, 이는 사후 수습 비용(수천억 원)을 사전 예방 비용 (수억원)으로 대체하는 엄청난 경제적 이득을 가져다 줄 것으로 예상함.
+- **실천 방안**: 모델이 지목한 '실효습도 30% 이하 + 농지 비율 고위험' 지역을 대상으로 순찰 횟수 증대(1일 5회) 및 소방 헬기 전진 배치.
 
-## **8.3. 산불 발생 예측 시스템으로서의 배포 가능성**
--> 실시간 연동: 기상청 ASOS/AWS API를 연동하여 매일 업데이트되는 기상 정보를 모델에 입력하면, 일 단위 산불 위험도 예측 서버로 즉시 배포가 가능할 것으로 예상
+- **효과**: 한정된 예산 내에서 골든타임 확보 및 방어력 극대화.
 
-## **8.4. 프로젝트의 한계점 및 향후 과제**
 
-본 프로젝트는 기상 데이터와 인적 요인을 결합하여 유의미한 예측 성과를 거두었으나, 다음과 같은 기술적 한계와 향후 개선 과제를 확인하였음:
 
-### - 공간 해상도 및 지형 데이터의 부재
+2️⃣ **핀포인트 대국민 맞춤형 경보 (Targeting)**
+   -> 무시되기 쉬운 일반 재난 문자 대신, 타겟팅된 정밀 알림 서비스를 제공.
 
-현재 시·도/시·군·구 단위의 광역 데이터를 사용하고 있어, 실제 산불 확산에 결정적인 영향을 미치는 **국지적 지형(경사도, 산의 방향, 계곡 지형)**의 특성을 세밀하게 반영하지 못하였음. 향후 GIS(지리정보시스템) 데이터 결합이 필요.
+- **실천 방안**: 농번기 및 건조기 발생 시, 해당 지역 이장님 및 지역 주민 전용 알림 발송.
 
-### - 인적 활동 추정의 간접성
+- **효과**: 구체적인 가이드 전달을 통해 소각 활동 억제 및 실질적 사고 예방.
 
-도시 산림 인접 비율(WUI)은 인구 밀도가 높은 도심지의 특성을 과하게 반영할 위험이 있음. 또한 실제 등산객 수나 실시간 소각 신고 등 직접적인 인적 활동 데이터를 확보하지 못해 밭 비율 등으로 간접 추정한 점이 한계로 남아있음.
 
-### - 희소 사건(Rare Event)에 따른 데이터 불균형
 
-산불은 미발생일이 압도적으로 많은 불균형 데이터로, SMOTE와 scale_pos_weight로 보정했음에도 불구하고, 높은 재현율(Recall) 대비 낮은 정밀도(Precision, 오탐지) 문제가 발생하였음. 실무 적용을 위해서는 오탐율을 낮추는 모델 고도화가 추가적으로 필요.
+3️⃣ **WUI 관리 및 경제적 손실 최소화 (Infrastructure)**
+   -> 사후 수습(수천억 원)을 사전 예방(수억 원)으로 대체하는 경제적 이득을 창출.
+
+- **실천 방안**: WUI(도시 산림 인접지) 고위험 마을 주변 방화수림 조성 및 비상 소화전 설치 우선순위 결정의 근거 데이터로 활용.
+
+- **효과**: 인명 피해 직결 구역의 선제적 인프라 구축 및 산림 복구 비용 절감.
+
+
+
+
+## **8.3. 배포 및 확장 가능성**
+
+- **실시간 연동**: 기상청 ASOS/AWS API를 연동하여 매일 업데이트되는 기상 정보를 모델에 자동 입력.
+
+- **시스템화**: 일 단위 산불 위험도 예측 서버로 즉시 배포 가능하여 실시간 대시보드 구축에 용이함.
+
+
+
+
+## **8.4. 한계점 및 향후 과제**
+
+본 프로젝트는 기상 데이터와 인적 요인을 결합하여 유의미한 성과를 거두었으나, 다음과 같은 기술적 한계와 개선 과제를 확인하였다.
+
+| 구분 | 주요 한계점 | 향후 개선 과제 |
+| :--- | :--- | :--- |
+| **공간 해상도** | 시·군·구 단위 광역 데이터를 사용하여 **국지적 지형(경사도, 산의 방향, 계곡 등)** 반영 미흡 | GIS(지리정보시스템) 데이터 결합을 통한 정밀 지형 분석 도입 |
+| **인적 활동 추정** | 등산객 수, 소각 신고 등 직접 데이터 부재로 **논밭 비율 등 간접 지표**에 의존 | 실시간 유동 인구 데이터 및 산불 신고 이력 데이터 연동 |
+| **데이터 불균형** | 희소 사건 특성상 **높은 재현율(Recall)** 대비 **낮은 정밀도(Precision)** 발생 (오탐지 발생) | 모델 앙상블 고도화 및 임계값(Threshold) 최적화를 통한 오탐율 개선 |
+
+
 
 ---
 
-<br/>
-<br/>
+
 
 # 9.💭한 줄 회고
 
 **고아라**
 ```
 Keep (좋았던 점)
-- 프로젝트 스토리텔링 완성: 5가지 모델링 결과를 관통하는 핵심 변수(실효습도, WUI 등)를 추출하여 프로젝트의 논리적 흐름을 구축하고, 이를 가독성 높은 README로 문서화함.
+- 프로젝트 스토리텔링 완성: 프로젝트의 논리적 흐름을 구축하고, 이를 가독성 높은 README로 문서화함.
 - 전략적 발표 준비: 기술적인 분석 내용을 비전공자도 이해하기 쉬운 기대 효과와 솔루션 중심으로 재구성하여 프로젝트의 실무적 가치를 강조함.
 
 Problem (아쉬운 점)
